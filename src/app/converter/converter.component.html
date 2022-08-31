@@ -1,0 +1,27 @@
+<div class="container">
+  <mat-card>
+    <mat-card-title>Currency converter </mat-card-title>
+    <mat-card-content>
+      <p class="mat-body">1 United States Dollar equals</p>
+      <p class="mat-h1">36.89 Ukrainian hryvnia</p>
+    </mat-card-content>
+    <div class="form-container">
+      <mat-form-field appearance="outline">
+        <input matInput autocmlete="off" />
+        <mat-select [(value)]="selection">
+          <mat-option value="Foo">UAH</mat-option>
+          <mat-option value="Bar">USD</mat-option>
+          <mat-option value="Baz">EURO</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <input matInput autocmlete="off" />
+        <mat-select [(value)]="selection">
+          <mat-option value="UAH">UAH</mat-option>
+          <mat-option value="USD">USD</mat-option>
+          <mat-option value="EURO">EURO</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </mat-card>
+</div>
